@@ -149,7 +149,7 @@ extension RIBsTreeViewerImpl: WebSocketClientDelegate {
     }
 }
 
-protocol WebSocketClientDelegate: class {
+protocol WebSocketClientDelegate: AnyObject {
     @available(iOS 13.0, *)
     func onConnected(client: WebSocketClient)
     @available(iOS 13.0, *)
